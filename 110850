@@ -1,0 +1,38 @@
+public class Customer {
+    private String fullName;
+    private String dateOfBirth;
+    private String address;
+    private String dateOfRegistration;
+    private String nationality;
+    
+    public Customer(String fullName, String dateOfBirth, String address, String dateOfRegistration, String nationality) {
+       
+    }
+    
+    // Getter for address
+    public String getAddress() {
+        return address;
+    }
+    
+    // Getter for date of registration
+    public String getDateOfRegistration() {
+        return dateOfRegistration;
+    }
+    
+    // Getter for nationality
+    public String getNationality() {
+        return nationality;
+    }
+    
+    // Main method for testing
+    public static void main(String[] args) {
+        Customer customer = new Customer("John Doe", "1990-01-01", "123 Main St", "2023-06-01", "USA");
+        System.out.println("Address: " + customer.getAddress());
+        System.out.println("Date of Registration: " + customer.getDateOfRegistration());
+        System.out.println("Nationality: " + customer.getNationality());
+        
+        // Uncomment the following lines to see the compilation error
+        // System.out.println("Full Name: " + customer.fullName);
+        // System.out.println("Date of Birth: " + customer.dateOfBirth);
+    }
+}
